@@ -1,0 +1,23 @@
+div.carousel-inner, .container-fluid{
+    margin :0;
+    padding :0 ;
+}
+
+a.carousel-control-prev{
+    padding : 0;
+    margin : 0;
+    width : 20px;
+}
+
+.container-xl.header{
+    margin-left : 3%;
+    width :120%;
+    margin-right : 5%;
+}
+
+
+div.site-header-menu{
+    width:100%;
+    margin-right :0;
+    padding-right : 0;
+}

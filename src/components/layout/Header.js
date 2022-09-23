@@ -1,5 +1,5 @@
 import React, { Component, Suspense }from 'react'
-import { Menu } from './menu';
+import  Menu from './menu';
 import Mobilemenu from './Mobile_menu';
 import { withTranslation } from 'react-i18next';
 
@@ -23,9 +23,7 @@ export class header extends Component {
                         <div className="container-xl">
                             {/* site-branding */}
                             <div className="site-branding">
-                            <a className="home-link" href={process.env.PUBLIC_URL + '/'} title="Altech" rel="home">
-                                <img id="logo-img" className="img-fluid" alt="logo" src="images/logo.png" />
-                            </a>
+                                <iframe src="images/Logo.svg" height="45px" style={{"margin-top": "25px"}}></iframe>
                             </div>
                             {/* site-branding end*/}
                             {/*site-navigation */}

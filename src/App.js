@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './i18n.js';
 
 // Layout
-import { Footer } from './components/layout/Footer';
+import Footer from './components/layout/Footer';
 // pages
 import Home3 from './components/Home3';
 import Aboutus_01 from './components/pages/Aboutus_01';

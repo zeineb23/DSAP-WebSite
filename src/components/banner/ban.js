@@ -20,7 +20,7 @@ export const Ban = (props) => { // It is a hook imported from 'react-i18next'
  // change the language
  const handleChange = e => { 
      setLang(e.target.value);
-     let loc = "http://localhost:3000/";
+     let loc = "https://151.80.152.181.nip.io/";
      window.location.replace(loc + "?lng=" + e.target.value);
      console.log("new : "+e.target.value);
      console.log(t);

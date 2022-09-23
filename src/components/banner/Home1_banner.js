@@ -14,7 +14,7 @@ export class CarouselPage extends Component {
 
       handleChange = e => { 
         this.setState({lang : e.target.value});
-        let loc = "http://localhost:3000/";
+        let loc = "https://151.80.152.181.nip.io/"; 
         window.location.replace(loc + "?lng=" + e.target.value);
         console.log("new : "+e.target.value);
         

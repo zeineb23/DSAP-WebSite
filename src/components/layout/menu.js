@@ -8,11 +8,11 @@ export class menu extends Component {
         return (
             <nav id="menu" role="navigation" className="menu">
                 <ul>
-                    <li className="menu-hasdropdown"><a href={process.env.PUBLIC_URL + '/'}>D-SAP</a></li>
-                    <li className="menu-hasdropdown"><a href={process.env.PUBLIC_URL + '/data_structuring'}>{t('Services')}</a></li>
-                    <li className="menu-hasdropdown"><a href={process.env.PUBLIC_URL + '/single_style2'}>{t('Realisations')}</a></li>
-                    <li className="menu-hasdropdown"><a href={process.env.PUBLIC_URL + '/blog_grid'}>{t('Actualite')}</a></li>
-                    <li className="menu-hasdropdown"><a href={process.env.PUBLIC_URL + '/faq'}>FAQs</a></li>
+                    <li className="menu-hasdropdown"><a href="https://151.80.152.181.nip.io/">D-SAP</a></li>
+                    <li className="menu-hasdropdown"><a href="https://151.80.152.181.nip.io/data_structuring">{t('Services')}</a></li>
+                    <li className="menu-hasdropdown"><a href="https://151.80.152.181.nip.io/single_style2">{t('Realisations')}</a></li>
+                    <li className="menu-hasdropdown"><a href="https://151.80.152.181.nip.io/blog_grid">{t('Actualite')}</a></li>
+                    <li className="menu-hasdropdown"><a href="https://151.80.152.181.nip.io/faq">FAQs</a></li>
                     <li className="menu-hasdropdown"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>

@@ -247,7 +247,7 @@ export class home3_mainpage extends Component {
                         {/* section title */}
                         <div className="section-title with-desc clearfix">
                           <div className="title-header">
-                            <h2 className="title">{t('WhyUs')}<span>{t('Choose')}</span>?</h2>
+                            <h2 className="title">{t('WhyUs')}?</h2>
                           </div>
                         </div>
                         {/* section title end */}
@@ -262,7 +262,7 @@ export class home3_mainpage extends Component {
                               </div>
                               <div className="featured-content">
                                 <div className="featured-title">{/* featured title */}
-                                  <h5>{t('WhyTit1')}</h5>
+                                  <h5>{t('Why1Tit')}</h5>
                                 </div>
                                 <div className="featured-desc">{/* featured desc */}
                                   <p style={{textAlign: "justify"}}>{t('Why1')}</p>
@@ -287,7 +287,7 @@ export class home3_mainpage extends Component {
                               </div>
                               <div className="featured-content">
                                 <div className="featured-title">{/* featured title */}
-                                  <h5>{t('WhyTit2')}</h5>
+                                  <h5>{t('Why2Tit')}</h5>
                                 </div>
                                 <div className="featured-desc">{/* featured desc */}
                                   <p style={{textAlign: "justify"}}>{t('Why2')}</p>
@@ -312,7 +312,7 @@ export class home3_mainpage extends Component {
                               </div>
                               <div className="featured-content">
                                 <div className="featured-title">{/* featured title */}
-                                  <h5>{t('WhyTit3')}</h5>
+                                  <h5>{t('Why3Tit')}</h5>
                                 </div>
                                 <div className="featured-desc">{/* featured desc */}
                                   <p style={{textAlign: "justify"}}>{t('Why3')}</p>
@@ -331,14 +331,14 @@ export class home3_mainpage extends Component {
             
             <br/><br/><br/>
             {/* team-section */}
-            <section className="ttm-row team-member-section clearfix">
+            <section className="ttm-row team-member-section clearfix"hidden>
               <div className="container-xl">
                 <div className="row align-items-center mb-5">
                   <div className="col-lg-5 res-991-text-center">
                     <div className="section-title style2 mb-0 clearfix">
                       <div className="title-header mb-0">
                         
-                        <h2 className="title">{t('WhyUs')}<span>{t('join')}</span>?</h2>
+                        <h2 className="title">{t('WhyUs')} <span>{t('join')}</span>?</h2>
                       </div>
                     </div>
                   </div>

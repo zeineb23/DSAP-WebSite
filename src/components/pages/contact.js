@@ -22,7 +22,8 @@ export default function ContactUs () {
     setNum('');
     setMail('');
     setMsg('');
-    setShow(true)
+    setShow(true);
+    setTimeout(function() {setShow(false)}, 2000);
 
   };
 

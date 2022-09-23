@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-
-export class Footer extends Component {
+import React, { Component, Suspense } from 'react';
+import { withTranslation } from 'react-i18next';
+export class footer extends Component {
     render() {
+        const { t } = this.props;
         return (
             <footer className="footer widget-footer clearfix">
             {this.props.children}               
@@ -13,16 +14,15 @@ export class Footer extends Component {
                     </div>
                     <div className="col-md-4">
                         <div>
-                        D-SAP est Laboratoire de recherche appliquée en ligne et d’optimisation de production industrielle
-                        
+                            D-SAP {t('DefDSAP')}
                         </div>
                     </div>
-                    <div className="col-md-4" style={{"padding-left": "20px"}}>
-                    <label>Restez connectés</label>
-                    <form id="subscribe-form" className="newsletter-form" method="post" action="#" data-mailchimp="true">                            
+                    <div className="col-md-4" style={{"padding-left": "20px", "margin-top": "50px"}}>
+                    <label >{t('Footer2')}</label>
+                    <form id="subscribe-form" className="newsletter-form" style={{"margin-top": "0px"}} method="post" action="#" data-mailchimp="true">                            
                             <div className="mailchimp-inputbox clearfix" id="subscribe-content" >     
                                 <i className="fa fa-envelope" />
-                                <input type="email" name="email" placeholder="Adresse mail" required />
+                                <input type="email" name="email" placeholder={t('Mail')} required />
                                 <input type="submit" value="" />
                             </div>
                             <div id="subscribe-msg" />
@@ -32,7 +32,7 @@ export class Footer extends Component {
                     </div>
                     <div className="col-md-2">
                         <div className="ttm-social-links-wrapper list-inline">
-                        Suivez-nous
+                         {t('Follow')}
                                 <ul className="social-icons">
                                     <li><a className=" tooltip-top" data-tooltip="Facebook"><i className="fab fa-facebook-f" /></ a>
                                     </li>
@@ -50,4 +50,16 @@ export class Footer extends Component {
             </footer>
         )
     }
+}
+
+const MyComponent = withTranslation()(footer);
+
+// i18n translations might still be loaded by the http backend
+// use react's Suspense
+export default function Footer() {
+  return (
+    <Suspense fallback="loading">
+      <MyComponent />
+    </Suspense>
+  );
 }

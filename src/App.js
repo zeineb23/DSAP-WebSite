@@ -44,14 +44,14 @@ import ScrollToTop from './components/layout/Gotop';
 
 
 const appHistory = {
-  basename: "https://151.80.152.181.nip.io"
+  basename: "/"
 };
 const history = createBrowserHistory(appHistory);
 function App() {
  
   return (
     <div className="page">
-      <Router basename={"https://151.80.152.181.nip.io"} history={history}>  
+      <Router basename={"/"} history={history}>  
         <div id="preloader">
           <div id="status">&nbsp;</div>
         </div>   

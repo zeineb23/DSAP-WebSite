@@ -1,0 +1,5 @@
+# Specify JavaScript and JSX files as JavaScript
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+# Specify JSX files as JavaScript
+*.jsx linguist-language=JavaScript
